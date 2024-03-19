@@ -1,0 +1,123 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color:white;
+}
+
+
+.menu{
+    list-style: none;
+    padding: 0;
+    background-color: red;
+    width: 80%;
+    max-width: 1000px;
+    height: 70px;
+    margin: auto;
+    border: 3px solid black ;
+    border-radius: 5px;
+    
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+
+}
+
+.menu li a:hover{
+    background-color:rgb(163, 88, 88) ;
+    border-radius: 5px;
+}
+
+
+.contenedorTexto{
+    border: 5px solid red;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+    text-align: justify;
+}
+
+
+.titulo1 {
+    font-family: 'Arial'; 
+    font-size: 48px; 
+    color: #ff1100;
+    text-align: center;
+    letter-spacing: 4px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.registro-box {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.titulo-resumen {
+    text-align: center;
+}
+
+.registro-columnas {
+    display: flex;
+}
+
+.registro-columnas form {
+    flex: 1;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+.input-group label {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.buttons {
+    margin-top: 35px;
+    text-align: center;
+}
+
+
+.green-button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.red-button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}

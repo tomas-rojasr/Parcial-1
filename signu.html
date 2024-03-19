@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CICERI</title>
+    <link rel="stylesheet" href="signu.css">
+    <script src="signu.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="titulo1"><h1>CICERI</h1></div>
+    <div>
+        <ul class="menu">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
+            <li><a href="login.html">Log in</a></li>
+        </ul>
+    </div>
+    <br>
+    <div class="container">
+        <div class="registro-box">
+            <h2 class="titulo-resumen">Registro</h2>
+            <br>
+            <div class="registro-columnas">
+                <form id="registro-form">
+                    <div class="input-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required>
+                    </div>
+                </form>
+                <form id="registro-form">
+                    <div class="input-group">
+                        <label for="edad">Edad:</label>
+                        <input type="number" id="edad" name="edad" min="18" max="99" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="tipo_sangre">Tipo de Sangre:</label>
+                        <select id="tipo_sangre" name="tipo_sangre" required>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                        </select>
+                    </div>
+                    <div class="buttons">
+                        <button type="submit" id="registro-button" class="green-button">Registrarse</button>
+                        <button type="button" id="cancelar-button" class="red-button">Cancelar</button>
+                    </div>                    
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
